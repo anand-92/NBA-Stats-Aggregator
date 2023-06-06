@@ -27,7 +27,11 @@ export default function MainApp() {
   let searchInfo: any;
 
   async function getJSON(name: string) {
-    return await fetch("http://localhost:8081/player/" + name + "/seasonStats")
+    return await fetch(
+      "https://2ed5-208-127-73-208.ngrok-free.app/player/" +
+        name +
+        "/seasonStats"
+    )
       .then((response) => response.json())
       .then((responseJson) => {
         return responseJson;
