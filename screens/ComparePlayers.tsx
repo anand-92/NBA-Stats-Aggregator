@@ -38,8 +38,7 @@ export default function ComparePlayers() {
     return await fetch(
       "https://2ed5-208-127-73-208.ngrok-free.app/player/" +
         name +
-        "/seasonStats",
-      { mode: "no-cors" }
+        "/seasonStats"
     )
       .then((response) => response.json())
       .then((responseJson) => {

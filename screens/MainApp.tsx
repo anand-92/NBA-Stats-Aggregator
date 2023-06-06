@@ -30,8 +30,7 @@ export default function MainApp() {
     return await fetch(
       "https://2ed5-208-127-73-208.ngrok-free.app/player/" +
         name +
-        "/seasonStats",
-      { mode: "no-cors" }
+        "/seasonStats"
     )
       .then((response) => response.json())
       .then((responseJson) => {
@@ -110,6 +109,11 @@ export default function MainApp() {
       <Text style={variableInstructionsStyle}>
         Enter a player's first & last name to search.
         <br />
+        You need to open a no cors chrome
+        <br />
+        open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\
+        Chrome --args --user-data-dir="/tmp/chrome_dev_test"
+        --disable-web-security
         <br />
         Hint: Players with unique names like "LeBron" can be found with just
         their first or last unique name.
