@@ -25,28 +25,32 @@ const PlayerInfoScreen = () => {
 
   async function fetchData() {
     const lebronStatsResponse = await fetch(
-      "https://2ed5-208-127-73-208.ngrok-free.app/player/lebron/seasonStats"
+      "https://2ed5-208-127-73-208.ngrok-free.app/player/lebron/seasonStats",
+      { mode: "no-cors" }
     );
     lebronStatsResponse
       .json()
       .then((lebronStatsResponse) => setLebronInfo(lebronStatsResponse));
 
     const durantStatsResponse = await fetch(
-      "https://2ed5-208-127-73-208.ngrok-free.app/player/durant/seasonStats"
+      "https://2ed5-208-127-73-208.ngrok-free.app/player/durant/seasonStats",
+      { mode: "no-cors" }
     );
     durantStatsResponse
       .json()
       .then((durantStatsResponse) => setDurantInfo(durantStatsResponse));
 
     const hardenStatsResponse = await fetch(
-      "https://2ed5-208-127-73-208.ngrok-free.app/player/harden/seasonStats"
+      "https://2ed5-208-127-73-208.ngrok-free.app/player/harden/seasonStats",
+      { mode: "no-cors" }
     );
     hardenStatsResponse
       .json()
       .then((hardenStatsResponse) => setHardenInfo(hardenStatsResponse));
 
     const westbrookStatsResponse = await fetch(
-      "https://2ed5-208-127-73-208.ngrok-free.app/player/westbrook/seasonStats"
+      "https://2ed5-208-127-73-208.ngrok-free.app/player/westbrook/seasonStats",
+      { mode: "no-cors" }
     );
     westbrookStatsResponse
       .json()
@@ -55,7 +59,8 @@ const PlayerInfoScreen = () => {
       );
 
     const lillardStatsResponse = await fetch(
-      "https://2ed5-208-127-73-208.ngrok-free.app/player/lillard/seasonStats"
+      "https://2ed5-208-127-73-208.ngrok-free.app/player/lillard/seasonStats",
+      { mode: "no-cors" }
     );
     lillardStatsResponse
       .json()
