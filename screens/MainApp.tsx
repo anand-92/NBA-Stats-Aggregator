@@ -103,14 +103,19 @@ export default function MainApp() {
   return (
     <View style={variableContainerStyle}>
       <Text style={variableInstructionsStyle}>
+        The host of the Node.js server requires 1 minute to spin up
+        after recieving its first request.
+        Please be patient as the stats load in on first use.
+        <br/>
+        <br/>
         Enter a player's first or last name to search.
-        <br />
-        <br />
+        <br/>
+        <br/>
         Hint: Players with unique names like "LeBron" can be found with
         their first or last unique name.
       </Text>
       <TextInput
-        style={variableInputStyle}
+          style={variableInputStyle}
         onChangeText={onChangeText}
         placeholder={text}
         placeholderTextColor={variablePlaceholderColor}
