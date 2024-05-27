@@ -21,8 +21,8 @@ export const styles = StyleSheet.create({
     alignSelf: "flex-start",
   },
   pics: {
-    minHeight: 200,
-    minWidth: 200,
+    minHeight: 100,
+    minWidth: 100,
   },
   input: {
     borderWidth: 2,
