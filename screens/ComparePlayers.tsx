@@ -60,11 +60,11 @@ export default function ComparePlayers() {
             "" +
               `Name: ${searchInfo.data[0].first_name} ${searchInfo.data[0].last_name}\n` +
               `Team: ${searchInfo.data[0].team.full_name}\n` +
-              `Height: ${searchInfo.data[0].height_feet}\'${searchInfo.data[0].height_inches}\"\n`.replaceAll(
+              `Height: ${searchInfo.data[0].height}\n`.replaceAll(
                 "null",
                 "?"
               ) +
-              `Weight: ${searchInfo.data[0].weight_pounds} lbs\n`.replaceAll(
+              `Weight: ${searchInfo.data[0].weight} lbs\n`.replaceAll(
                 "null",
                 "?"
               ) +
