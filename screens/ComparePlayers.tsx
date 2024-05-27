@@ -151,7 +151,7 @@ export default function ComparePlayers() {
     <View style={variableContainerStyle}>
       <Image></Image>
       <Text style={variableInstructionsStyle}>
-        Enter 2 player's first & last names to search and compare.
+        Enter 2 player's first or last names to search and compare.
         <br />
         <br />
         Hint: Players with unique names like "LeBron" can be found with just

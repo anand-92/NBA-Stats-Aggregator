@@ -1,8 +1,8 @@
-import { StyleSheet } from "react-native";
-
+import {Dimensions, StyleSheet} from "react-native";
+const screenWidth = Dimensions.get("window").width;
 export const styles = StyleSheet.create({
   instructions: {
-    fontSize: 18,
+    fontSize: screenWidth > 600 ? 18 : 14, // Dynamic font size
     fontWeight: "bold",
     color: "black",
     marginBottom: 15,
@@ -14,6 +14,8 @@ export const styles = StyleSheet.create({
     color: "black",
     marginBottom: 15,
     textAlign: "center",
+    fontSize: screenWidth > 600 ? 18 : 14, // Dynamic font size
+
   },
   click: {
     alignSelf: "flex-start",
@@ -68,6 +70,7 @@ export const styles = StyleSheet.create({
     textAlign: "center",
   },
   container: {
+    paddingHorizontal: screenWidth > 600 ? 50 : 20, // Dynamic padding
     backgroundColor: "white",
     flex: 1,
     alignItems: "center",
@@ -80,14 +83,14 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
   },
   title: {
-    fontSize: 20,
+    fontSize: screenWidth > 600 ? 18 : 14, // Dynamic font size
     fontWeight: "bold",
     alignSelf: "center",
     justifyContent: "center",
     textAlign: "center",
   },
   darkTitle: {
-    fontSize: 20,
+    fontSize: screenWidth > 600 ? 18 : 14, // Dynamic font size
     fontWeight: "bold",
     alignSelf: "center",
     justifyContent: "center",
@@ -163,7 +166,7 @@ export const styles = StyleSheet.create({
     color: "white",
   },
   darkInstructions: {
-    fontSize: 18,
+    fontSize: screenWidth > 600 ? 18 : 14, // Dynamic font size
     fontWeight: "bold",
     color: "white",
     marginBottom: 15,
@@ -175,6 +178,8 @@ export const styles = StyleSheet.create({
     color: "white",
     marginBottom: 15,
     textAlign: "center",
+    fontSize: screenWidth > 600 ? 18 : 14, // Dynamic font size
+
   },
   darkInput: {
     borderWidth: 2,

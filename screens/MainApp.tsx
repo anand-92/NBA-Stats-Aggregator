@@ -8,6 +8,7 @@ import { stockPic } from "../resources/pictures";
 import { useIsFocused } from "@react-navigation/native";
 
 export default function MainApp() {
+
   const isFocused = useIsFocused();
   let storedMode;
   const [variableContainerStyle, setVariableContainerStyle] = useState(
