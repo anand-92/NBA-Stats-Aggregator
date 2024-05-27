@@ -25,28 +25,28 @@ const PlayerInfoScreen = () => {
 
   async function fetchData() {
     const lebronStatsResponse = await fetch(
-      "http://localhost:8081/player/lebron/seasonStats"
+      "https://express-hello-world-xj8p.onrender.com/player/lebron/seasonStats"
     );
     lebronStatsResponse
       .json()
       .then((lebronStatsResponse) => setLebronInfo(lebronStatsResponse));
 
     const durantStatsResponse = await fetch(
-      "http://localhost:8081/player/durant/seasonStats"
+      "https://express-hello-world-xj8p.onrender.com/player/durant/seasonStats"
     );
     durantStatsResponse
       .json()
       .then((durantStatsResponse) => setDurantInfo(durantStatsResponse));
 
     const hardenStatsResponse = await fetch(
-      "http://localhost:8081/player/harden/seasonStats"
+      "https://express-hello-world-xj8p.onrender.com/player/harden/seasonStats"
     );
     hardenStatsResponse
       .json()
       .then((hardenStatsResponse) => setHardenInfo(hardenStatsResponse));
 
     const westbrookStatsResponse = await fetch(
-      "http://localhost:8081/player/westbrook/seasonStats"
+      "https://express-hello-world-xj8p.onrender.com/player/westbrook/seasonStats"
     );
     westbrookStatsResponse
       .json()
@@ -55,7 +55,7 @@ const PlayerInfoScreen = () => {
       );
 
     const lillardStatsResponse = await fetch(
-      "http://localhost:8081/player/lillard/seasonStats"
+      "https://express-hello-world-xj8p.onrender.com/player/lillard/seasonStats"
     );
     lillardStatsResponse
       .json()

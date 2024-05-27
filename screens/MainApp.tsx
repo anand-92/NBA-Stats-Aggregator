@@ -27,7 +27,7 @@ export default function MainApp() {
   let searchInfo: any;
 
   async function getJSON(name: string) {
-    return await fetch("http://localhost:8081/player/" + name + "/seasonStats")
+    return await fetch("https://express-hello-world-xj8p.onrender.com/player/" + name + "/seasonStats")
       .then((response) => response.json())
       .then((responseJson) => {
         return responseJson;
