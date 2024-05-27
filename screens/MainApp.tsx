@@ -53,11 +53,11 @@ export default function MainApp() {
             "" +
               `Name: ${searchInfo.data[0].first_name} ${searchInfo.data[0].last_name}\n` +
               `Team: ${searchInfo.data[0].team.full_name}\n` +
-              `Height: ${searchInfo.data[0].height_feet}\'${searchInfo.data[0].height_inches}\"\n`.replaceAll(
+              `Height: ${searchInfo.data[0].height}\n`.replaceAll(
                 "null",
                 "?"
               ) +
-              `Weight: ${searchInfo.data[0].weight_pounds} lbs\n`.replaceAll(
+              `Weight: ${searchInfo.data[0].weight} lbs\n`.replaceAll(
                 "null",
                 "?"
               ) +
@@ -103,10 +103,10 @@ export default function MainApp() {
   return (
     <View style={variableContainerStyle}>
       <Text style={variableInstructionsStyle}>
-        Enter a player's first & last name to search.
+        Enter a player's first or last name to search.
         <br />
         <br />
-        Hint: Players with unique names like "LeBron" can be found with just
+        Hint: Players with unique names like "LeBron" can be found with
         their first or last unique name.
       </Text>
       <TextInput

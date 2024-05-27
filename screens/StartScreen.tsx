@@ -56,7 +56,7 @@ export default function StartScreen({
           <Text style={variableButtonTextStyle}>Start Now</Text>
         </Pressable>
         <Pressable style={variableButtonStyle} onPress={changeMode}>
-          <Text style={variableButtonTextStyle}>{mode}</Text>
+          <Text style={variableButtonTextStyle}>{mode ? mode : "Light Mode"}</Text>
         </Pressable>
       </ImageBackground>
     </View>

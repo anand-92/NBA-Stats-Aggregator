@@ -66,7 +66,7 @@ const PlayerInfoScreen = () => {
     if (lebronInfo.data != undefined) {
       return (
         `Name: ${lebronInfo.data[0].first_name} ${lebronInfo.data[0].last_name}\n` +
-        `Height: ${lebronInfo.data[0].height_feet}\'${lebronInfo.data[0].height_inches}\"\n` +
+        `Height: ${lebronInfo.data[0].height}\n` +
         `Position: ${lebronInfo.data[0].position}\n` +
         `PPG: ${lebronInfo.data[0].pts}`
       );
@@ -76,7 +76,7 @@ const PlayerInfoScreen = () => {
     if (durantInfo.data != undefined) {
       return (
         `Name: ${durantInfo.data[0].first_name} ${durantInfo.data[0].last_name}\n` +
-        `Height: ${durantInfo.data[0].height_feet}\'${durantInfo.data[0].height_inches}\"\n` +
+        `Height: ${durantInfo.data[0].height}\n` +
         `Position: ${durantInfo.data[0].position}\n` +
         `PPG: ${durantInfo.data[0].pts}`
       );
@@ -86,7 +86,7 @@ const PlayerInfoScreen = () => {
     if (hardenInfo.data != undefined) {
       return (
         `Name: ${hardenInfo.data[0].first_name} ${hardenInfo.data[0].last_name}\n` +
-        `Height: ${hardenInfo.data[0].height_feet}\'${hardenInfo.data[0].height_inches}\"\n` +
+        `Height: ${hardenInfo.data[0].height}\n` +
         `Position: ${hardenInfo.data[0].position}\n` +
         `PPG: ${hardenInfo.data[0].pts}`
       );
@@ -96,7 +96,7 @@ const PlayerInfoScreen = () => {
     if (westbrookInfo.data != undefined) {
       return (
         `Name: ${westbrookInfo.data[0].first_name} ${westbrookInfo.data[0].last_name}\n` +
-        `Height: ${westbrookInfo.data[0].height_feet}\'${westbrookInfo.data[0].height_inches}\"\n` +
+        `Height: ${westbrookInfo.data[0].height}\n` +
         `Position: ${westbrookInfo.data[0].position}\n` +
         `PPG: ${westbrookInfo.data[0].pts}`
       );
@@ -106,7 +106,7 @@ const PlayerInfoScreen = () => {
     if (lillardInfo.data != undefined) {
       return (
         `Name: ${lillardInfo.data[0].first_name} ${lillardInfo.data[0].last_name}\n` +
-        `Height: ${lillardInfo.data[0].height_feet}\'${lillardInfo.data[0].height_inches}\"\n` +
+        `Height: ${lillardInfo.data[0].height}\n` +
         `Position: ${lillardInfo.data[0].position}\n` +
         `PPG: ${lillardInfo.data[0].pts}`
       );
