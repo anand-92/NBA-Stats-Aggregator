@@ -158,7 +158,7 @@ export default function ComparePlayers() {
         their first or last unique name.
       </Text>
       <Text style={variableInstructionsSearchStyle}>
-        Enter the first player's first & last name to search.
+        Enter the first player's first or last name to search.
       </Text>
       <TextInput
         style={variableInputStyle}
@@ -167,7 +167,7 @@ export default function ComparePlayers() {
         placeholderTextColor={variablePlaceholderColor}
       />
       <Text style={variableInstructionsSearchStyle}>
-        Enter the second player's first & last name to search.
+        Enter the second player's first or last name to search.
       </Text>
       <TextInput
         style={variableInputStyle}

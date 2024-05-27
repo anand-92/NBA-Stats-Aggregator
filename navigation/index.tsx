@@ -90,7 +90,6 @@ function BottomTabNavigator() {
         component={StartScreen}
         options={({ navigation }: RootTabScreenProps<"StartScreen">) => ({
           title: "Start Screen",
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
           headerRight: () => (
             <Pressable
               onPress={() => navigation.navigate("Modal")}
@@ -113,7 +112,6 @@ function BottomTabNavigator() {
         component={MainApp}
         options={{
           title: "NBA Stats",
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
       <BottomTab.Screen
@@ -121,7 +119,6 @@ function BottomTabNavigator() {
         component={ComparePlayers}
         options={{
           title: "Compare Players",
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
     </BottomTab.Navigator>
